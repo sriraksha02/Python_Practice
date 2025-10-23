@@ -1,0 +1,14 @@
+import math
+class Solution:
+    def jugglerSequence(self, n):
+        seq = [n]
+        while n!=1:
+            if n%2==0:
+                nxt=int(n**0.5)
+            else:
+                nxt=int(n**1.5)
+            seq.append(nxt)
+            n=nxt
+        return seq
+               
+    
